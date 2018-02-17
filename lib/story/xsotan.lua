@@ -257,6 +257,7 @@ function Xsotan.createGuardian(position, volumeFactor)
     ShipUtility.addTurretsToCraft(boss, Xsotan.createPlasmaTurret(), numTurrets, numTurrets)
     ShipUtility.addTurretsToCraft(boss, Xsotan.createLaserTurret(), numTurrets, numTurrets)
     ShipUtility.addTurretsToCraft(boss, Xsotan.createRailgunTurret(), numTurrets, numTurrets)
+    ShipUtility.addBossAntiTorpedoEquipment(boss)
 
     boss.title = "Xsotan Wormhole Guardian"%_t
     boss.crew = boss.minCrew
