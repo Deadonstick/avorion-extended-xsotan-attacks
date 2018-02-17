@@ -53,7 +53,7 @@ function Xsotan.createShip(position, volumeFactor)
     TurretGenerator.initialize(random():createSeed())
     local turret = TurretGenerator.generateArmed(x, y)
     local volumeMult = math.max(1, (math.log(volumeFactor)/math.log(2)))
-    if volumeMult == 768 then
+    if volumeFactor == 768 then
         volumeMult = volumeMult * 2
     end
     local numTurrets = math.max(2, Balancing_GetEnemySectorTurrets(x, y) * 0.75 * volumeMult)
